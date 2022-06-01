@@ -88,11 +88,20 @@ body > div {
 .toast--info {
   border-color: #2f86eb;
 }
+.toast--info .toast__icon {
+  color: #2f86eb;
+}
 .toast--warning {
   border-color: #ffc021;
 }
+.toast--warning .toast__icon {
+  color: #ffc021;
+}
 .toast--error {
   border-color: #ff623d;
+}
+.toast--error .toast__icon {
+  color: #ff623d;
 }
 
 .toast + .toast {
