@@ -84,15 +84,23 @@ body > div {
   max-width: 450px;
   border-left: 4px solid;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0, 08);
-  animation: slideInLeft ease 0.3s;
+  animation: slideInLeft ease 0.3s, fadeOut linear 1s 3s forwards;
 }
 
 @keyframes slideInLeft {
   from {
+    opacity: 0;
     transform: translateX(calc(100% + 32px));
   }
   to {
+    opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
   }
 }
 
