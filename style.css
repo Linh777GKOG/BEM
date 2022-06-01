@@ -67,9 +67,24 @@ body > div {
   cursor: default;
 }
 
+/* ====== Toast Message ====== */
 .toast {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 20px 0;
+  border-left: 4px solid;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0, 08);
 }
+
 .toast__icon {
+  font-size: 24px;
+}
+
+.toast__icon,
+toast__close {
+  padding: 0 16px;
 }
 .toast__body {
 }
@@ -78,4 +93,6 @@ body > div {
 .toast__msg {
 }
 .toast__close {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.3);
 }
