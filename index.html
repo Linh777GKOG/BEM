@@ -33,7 +33,24 @@
     </div>
     <div>
       <div class="btn btn--success">Show success toast</div>
-      <div class="btn btn--error">Show error toast</div>
+      <div class="btn btn--danger">Show error toast</div>
     </div>
+
+    <script>
+      // Toast function
+      function toast(
+        title = "",
+        message = "",
+        type = "info",
+        duration = 3000
+      ) {}
+
+      toast({
+        title: "Success",
+        message: "Máy vi tính kết nối internet (Windows, Ubuntu hoặc MacOS)",
+        type: "success",
+        duration: 3000,
+      });
+    </script>
   </body>
 </html>
