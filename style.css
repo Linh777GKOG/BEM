@@ -68,6 +68,12 @@ body > div {
 }
 
 /* ====== Toast Message ====== */
+#toast {
+  position: fixed;
+  top: 32px;
+  right: 32px;
+}
+
 .toast {
   display: flex;
   align-items: center;
@@ -78,6 +84,16 @@ body > div {
   max-width: 450px;
   border-left: 4px solid;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0, 08);
+  animation: slideInLeft ease 0.3s;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(calc(100% + 32px));
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 .toast--success {
@@ -136,10 +152,4 @@ toast__close {
   font-size: 20px;
   color: rgba(0, 0, 0, 0.3);
   cursor: pointer;
-}
-
-#toast {
-  position: fixed;
-  top: 32px;
-  right: 32px;
 }
